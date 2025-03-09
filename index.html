@@ -18,7 +18,7 @@
         <!-- Navigation -->
         <nav>
             <a href="#home">Home</a> <!-- memakai # untuk pemanggilan halaman -->
-            <a href="#my_profile">My Profile</a>
+            <a href="#about_me">About Me</a>
             <a href="#project">Project</a>
             <a href="#message_us">Message Us</a>
         </nav>
@@ -30,23 +30,36 @@
     <main>
         <!-- Halaman Home -->
         <section id="home">
-            <header>
-                <h1>Hi guys, Welcome to my website</h1>
-                <p>Ini adalah mini project pertama saya</p>
-            </header>
+            <!-- Banner autoslide -->
+            <div class="banner_img">
+                <div class="text">
+                <h1>Welcome to my website</h1> <br>
+                <h2>Hi, Saya Renoka Tresna Pramuda</h2>
+                <p>Mahasiswa Ilmu Komputer di Universitas Muhammadiyah Kudus</p>
+                </div>
+                <div class="gambar_home"></div>
+            
         </section>
-
-        <!-- Banner autoslide -->
-         <div class="banner_img"></div>
+        
 <hr/>
 
-        <!-- Halaman My Profile -->
-        <section id="my_profile">
-            <header>
-                <h1>My Profile</h1>
-            </header>
-            <!-- konten halaman my_profile -->
-            <div class="my_profile">
+        <!-- Halaman About Me -->
+        <section id="about_me">
+    
+            <!-- konten halaman about_me -->
+            <div class="about_me">
+                 
+            <!-- deskripsi profil -->
+                <div class="deskripsi_profil">
+                    <h1>About Me</h1>
+                    <p>Memiliki minat besar dalam pengembangan web dan machine learning. Kini sedang mengembangkan proyek Aplikasi booking antrean BPJS. Saya antusias belajar industri IT</p>   
+                    <p>Keahlian : Python</p>
+                    <p>Motto&nbsp;&nbsp;&nbsp; : Tidak ada hasil yang indah tanpa proses yang susah</p>
+                    <a href="#project" style="border: 1px solid black; text-decoration: none">My Project</a>
+                </div>
+                <!-- gambar -->
+                <div class="gambar_profile"><div></div>
+    
             </div>
         </section>
         
@@ -58,7 +71,19 @@
             </header>
             <!-- konten halaman project -->
             <div class="project">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis maiores harum, ipsam unde doloribus labore? Expedita animi culpa quae hic eius eveniet, omnis iure explicabo aut, consectetur eos praesentium autem.</p>
+                <div class="sentiment_analysis"><p style="margin-top: -80px;
+                    text-align: justify;
+                    font-family: sans-serif;
+                    color: #ffffff;">Analisis sentimen E-Commerce Tokopedia pada setiap ulasan transaksi Hp OPPO menggunakan metode K-Nearest Neighbor </p></div>
+                <div class="resign"><p style="margin-top: -80px;
+                    text-align: center;
+                    font-family: sans-serif;
+                    color: #ffffff;">Studi kasus Prediksi Karyawan Resign</p></div>
+                <div class="yolo"><p style="margin-top: -80px;
+                    text-align: justify;
+                    font-family: sans-serif;
+                    color: #ffffff;">Studi Kasus Mendeteksi Gerakan Tangan pada SIBI Language (Bahasa Isyarat) </p></div>
+                
             </div>
         </section>
         
@@ -69,16 +94,58 @@
             </header>
             <!-- konten halaman message us -->
             <div class="message_us">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum commodi illo culpa similique, facere omnis quisquam repellat sit molestiae. Possimus minima officia qui voluptas omnis iure cupiditate obcaecati ullam perspiciatis?</p>
+                <form action="index.html" method="get">
+                <!-- form nama -->
+                
+                    <table>
+                        <tr>
+                            <td>Nama</td>
+                            <td><input type="text" name="nama" id="nama" style="width: 228px;"></td>
+                        </tr>
+                    
+                <!-- form tanggal lahir -->
+                        <tr>
+                            <td>Tanggal Lahir</td>
+                            <td><input type="date" name="tanggal_lahir" id="tanggal_lahir" style="width: 230px;"></td>
+                        </tr>
+
+                <!-- form jenis kelamin -->
+                        <tr>
+                            <td>Jenis Kelamin</td>
+                            <td><input type="radio" name="jenis_kelamin" id="laki-laki"> Laki-Laki
+                                <input type="radio" name="jenis_kelamin" id="perempuan"> Perempuan </td>
+                        </tr>
+
+                <!-- form pesan -->
+                        <tr>
+                            <td>Pesan</td>
+                            <td><textarea rows="5" cols="20" style="width: 230px;"></textarea></td>
+                
+
+                <!-- form submit -->  
+                        <tr>
+                            <td></td>
+                            <td><button type="submit" style="width: 237px;">submit</button></td>
+                        </tr>
+
+                    </table>
+                </form>
+                    
+                <div style="border: 1px solid black; width: 400px; height: 170px; font-size: 10px;">
+                    <p><b>Current Time</b> : Sunday March 09 2025 15.42 WIB</p><br>
+                    <p><b>Nama</b> : Renoka Tresna Pramuda</p>
+                    <p><b>Tanggal Lahir</b> : 15 April 2004</p>
+                    <p><b>Jenis Kelamin</b> : Laki - Laki</p>
+                    <p><b>Pesan</b> : Semangattt</p>
+                </div>
             </div>
         </section>
-        
     </main>
 
     <!-- Footer -->
     <footer>
         <header>
-            <p>Copyright 2025 - My Website</p>
+            <p style="font-family: 'Times New Roman', Times, serif;">Copyright 2025 - My Website</p>
         </header>
     </footer>
 
