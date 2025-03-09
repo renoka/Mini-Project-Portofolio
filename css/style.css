@@ -1,1 +1,52 @@
-/* css */
+.header{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    height: 50px;
+    width: 50px;
+    background-image: "assets/r.jpg";
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+nav{
+    display: flex;
+}
+nav a{
+    border: 1px solid;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+}
+
+hr{color: black;}
+
+.banner_img{
+    border: 1px solid black;
+    height: 500px;
+}
+
+.my_profile{
+    border: 1px solid black;
+    height: 500px;
+}
+
+.project{
+    border: 1px solid black;
+    height: 500px;
+}
+
+.message_us{
+    border: 1px solid black;
+    height: 500px;
+}
+
+footer{
+    border: 1px solid black;
+    justify-items: right;
+}
