@@ -1,8 +1,19 @@
+body{
+    padding-top: 60px;
+    background-color: darkgray;
+}
 .header{
+    background-color: ghostwhite;
     height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 3px solid black;
 }
 
 .logo{
@@ -16,7 +27,7 @@
 
 nav{
     display: flex;
-}
+} 
 nav a{
     border: 1px solid;
     padding: 8px;
