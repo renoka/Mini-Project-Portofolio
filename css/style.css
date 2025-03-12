@@ -134,6 +134,15 @@ div,h2,p{
     font-family: 'Times New Roman', Times, serif;
 }
 
+button{
+    width: 237px;
+    background-color: darkgray;
+    height: 20px;
+}
+button:hover{
+    background-color: rgb(226, 241, 206);
+}
+
 footer{
     border: 1px solid black;
     justify-items: right;

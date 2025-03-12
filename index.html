@@ -33,7 +33,8 @@
             <div class="banner_img">
                 <div class="text">
                 <h1>Welcome to my website</h1> <br>
-                <h2>Hi, Saya Renoka Tresna Pramuda</h2>
+                <!-- <button id="klik">Ganti Nama</button> -->
+                <h2>Hi, Saya <span id="nama">Renoka Tresna Pramuda</span></h2>
                 <p>Mahasiswa Ilmu Komputer di Universitas Muhammadiyah Kudus</p>
                 </div>
                 <div class="gambar_home"></div>
@@ -93,51 +94,54 @@
             </header>
             <!-- konten halaman message us -->
             <div class="message_us">
-                <form action="index.html" method="get">
-                <!-- form nama -->
+                <form action="index.html" >
+                
                 
                     <table>
+                <!-- form nama -->
                         <tr>
                             <td>Nama</td>
-                            <td><input type="text" name="nama" id="nama" style="width: 228px;"></td>
+                            <td><input type="text" name="nama" id="nama" placeholder="masukan nama disini" required style="width: 228px;background-color: darkgray; border: 2px solid black; text-align: center;"></td>
                         </tr>
                     
                 <!-- form tanggal lahir -->
                         <tr>
                             <td>Tanggal Lahir</td>
-                            <td><input type="date" name="tanggal_lahir" id="tanggal_lahir" style="width: 230px;"></td>
+                            <td><input type="date" name="tanggal_lahir" id="tanggal_lahir" required style="width: 230px;background-color: darkgray; border: 2px solid black;"></td>
                         </tr>
 
                 <!-- form jenis kelamin -->
                         <tr>
                             <td>Jenis Kelamin</td>
-                            <td><input type="radio" name="jenis_kelamin" id="laki-laki"> Laki-Laki
-                                <input type="radio" name="jenis_kelamin" id="perempuan"> Perempuan </td>
+                            <td><input type="radio" name="jenis_kelamin" value="Laki-Laki" id="laki-laki"> Laki-Laki
+                                <input type="radio" name="jenis_kelamin" value="Perempuan" id="perempuan" required> Perempuan </td>
                         </tr>
 
                 <!-- form pesan -->
                         <tr>
                             <td>Pesan</td>
-                            <td><textarea rows="5" cols="20" style="width: 230px;"></textarea></td>
+                            <td><textarea id="pesan" rows="5" cols="20" required style="width: 230px; background-color: darkgray; border: 2px solid black;"></textarea></td>
                 
 
                 <!-- form submit -->  
                         <tr>
                             <td></td>
-                            <td><button type="submit" style="width: 237px;">submit</button></td>
+                            <td><button type="submit">submit</button></td>
                         </tr>
 
                     </table>
                 </form>
                     
-                <div style="border: 1px solid black; width: 400px; height: 170px; font-size: 10px;">
+                <div id="hasil" style="border: 1px solid black; width: 400px; height: 170px; font-size: 10px;">
                     <p><b>Current Time</b> : Sunday March 09 2025 15.42 WIB</p><br>
                     <p><b>Nama</b> : Renoka Tresna Pramuda</p>
                     <p><b>Tanggal Lahir</b> : 15 April 2004</p>
                     <p><b>Jenis Kelamin</b> : Laki - Laki</p>
                     <p><b>Pesan</b> : Semangattt</p>
-                </div>
-            </div>
+
+                   
+
+                   
         </section>
     </main>
 
@@ -148,5 +152,8 @@
         </header>
     </footer>
 
+    <script src="js/script.js">
+        
+    </script>
 </body>
 </html>
